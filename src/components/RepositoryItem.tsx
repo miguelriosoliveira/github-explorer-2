@@ -5,6 +5,7 @@ interface RepositoryItemProps {
 		html_url: string;
 	};
 }
+
 export function RepositoryItem({ repository }: RepositoryItemProps) {
 	return (
 		<li>
