@@ -17,33 +17,24 @@
 		"ecmaVersion": 12,
 		"sourceType": "module"
 	},
-	"plugins": [
-		"react",
-		"react-hooks",
-		"@typescript-eslint",
-		"prettier",
-		"eslint-plugin-import-helpers"
-	],
+	"plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
 	"rules": {
 		"camelcase": "off",
 
 		"@typescript-eslint/explicit-module-boundary-types": "off",
 
-		"import/extensions": [
-			"error",
-			"ignorePackages",
-			{ "ts": "never", "tsx": "never", "jsx": "never" }
-		],
-		"import/prefer-default-export": "off",
-
-		"import-helpers/order-imports": [
+		"import/extensions": ["error", "ignorePackages", { "ts": "never", "tsx": "never" }],
+		"import/order": [
 			"error",
 			{
-				"newlinesBetween": "always",
-				"groups": ["module", "/^@shared/", ["parent", "sibling", "index"]],
-				"alphabetize": { "order": "asc", "ignoreCase": true }
+				"newlines-between": "always",
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				}
 			}
 		],
+		"import/prefer-default-export": "off",
 
 		"prettier/prettier": "error",
 
