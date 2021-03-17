@@ -1,6 +1,6 @@
 # github-explorer-2
 
-Simple repository explorermade using GitHub API.
+Simple repository explorer made using GitHub API.
 
 This is the first project created during the Ignite course by Rocketseat.
 
